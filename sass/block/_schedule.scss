@@ -1,0 +1,44 @@
+.schedule{
+    &__monday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+    &__tuesday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+    &__wednesday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+    &__thursday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+    &__friday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+    &__saturday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+    &__sunday{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+}
