@@ -30,10 +30,7 @@
         }
     }
     &__saturday{
-        display: none;
-        &_active{
-            display: block;
-        }
+        @include displ;
     }
     &__sunday{
         display: none;
