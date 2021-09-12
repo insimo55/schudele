@@ -1,0 +1,23 @@
+@media (max-width: 552px){
+    .schedule{
+        &__wrapper{
+            top: 550px;
+        }
+        &__day{
+            width: 300px;
+        }
+        &__lession{
+            width: 300px;
+        }
+        &__btn{
+            margin-bottom: 15px;
+        }
+        &__split{
+            grid-template-columns: 50px 250px;
+        }
+        &__name{
+            font-size: 14px;
+        }
+    }
+    
+}

@@ -8,6 +8,7 @@
 }
 @import 'base/variebles';
 @import 'block/schedule';
+@import 'block/media';
 body{
     height: 1000%;
     width: 100%;
@@ -15,7 +16,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
 
 .container{
     width: 1140px;
