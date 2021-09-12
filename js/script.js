@@ -245,7 +245,8 @@ popolate(max_particles);
 
 var tela = document.createElement('canvas');
 tela.width = $(window).width();
-tela.height = $(window).height();
+tela.height = 1000;
+// tela.height = $(window).height();
 $("body").append(tela);
 
 var canvas = tela.getContext('2d');

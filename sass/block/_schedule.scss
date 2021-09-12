@@ -1,5 +1,34 @@
+#time_fr_1{
+    grid-area: time_fr_1;
+    border-right: 1px solid red;
+    height: 150px;
+}
+#split_fr_1{
+    grid-area: split_fr_1;
+}
+#split_fr_2{
+    grid-area: split_fr_2;
+}
+#time_fr_2{
+    grid-area: time_fr_2;
+    border-right: 1px solid red;
+    height: 150px;
+}
+#split_fr_3{
+    grid-area: split_fr_3;
+}
+#split_fr_4{
+    grid-area: split_fr_4;
+}
+
+
+
 .schedule{
     position: relative;
+    &__name{
+        color: white;
+        font-size: 15px;
+    }
     &__btns{
         top: 50px;
         left: 50%;
@@ -24,17 +53,18 @@
     &__wrapper{
         background: rgba($color: #000000, $alpha: .4);
         position: absolute;
-        top: 300px;
+        display: block;
+        top: 400px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
     &__time{
+        font-size: 15px;
         display: flex;
         height: 75px;
         width: 50px;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
     }
     &__day{
         display: block;
@@ -100,6 +130,23 @@
         display: none;
         &_active{
             display: block;
+        }
+    }
+    &__split{
+        display: grid;
+        height: 150px;
+        grid-template-columns: 50px 350px;
+        grid-template-rows: repeat(2,75px);
+        border: 1px solid red;
+        &_fr1{
+            grid-template-areas: 
+            "time_fr_1 split_fr_1"
+            "time_fr_1 split_fr_2";
+        }
+        &_fr2{
+            grid-template-areas: 
+            "time_fr_2 split_fr_3"
+            "time_fr_2 split_fr_4";
         }
     }
 }
