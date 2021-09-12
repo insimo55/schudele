@@ -5,62 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PYk pyk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="schedule">
         <div class="container">
-            <div id="monday" class="schedule__monday">
-                <div class="schedule__monday_day schedule__day">понедельник</div>
-                <div class="schedule__lession_1 schedule__lession">первая пара понедельник</div>
-                <div class="schedule__lession_2 schedule__lession">вторая пара понедельник</div>
-                <div class="schedule__lession_3 schedule__lession">третья пара понедельник</div>
-                <div class="schedule__lession_4 schedule__lession">четвертая пара понедельник</div>
+            <div class="schedule__btns">
+                <div id="mon_btn" class="schedule__btn">Понедельник</div>
+                <div id="tue_btn" class="schedule__btn">Вторник</div>
+                <div id="wed_btn" class="schedule__btn">Среда</div>
+                <div id="thu_btn" class="schedule__btn">Четверг</div>
+                <div id="fri_btn" class="schedule__btn">Пятница</div>
+                <div id="sat_btn" class="schedule__btn">Суббота</div>
+                <div id="sun_btn" class="schedule__btn">Воскресенье</div>
             </div>
-            <div id="tuesday" class="schedule__tuesday">
-                <div class="schedule__tuesday_day schedule__day">вторник</div>
-                <div class="schedule__lession_1 schedule__lession">вторник 1</div>
-                <div class="schedule__lession_2 schedule__lession">2</div>
-                <div class="schedule__lession_3 schedule__lession">3</div>
-                <div class="schedule__lession_4 schedule__lession">5</div>
-            </div>
-            <div id="wednesday" class="schedule__wednesday">
-                <div class="schedule__wednesday_day schedule__day">среда</div>
-                <div class="schedule__lession_1 schedule__lession">1</div>
-                <div class="schedule__lession_2 schedule__lession">2</div>
-                <div class="schedule__lession_3 schedule__lession">3</div>
-                <div class="schedule__lession_4 schedule__lession">4</div>
-            </div>
-            <div id="thursday" class="schedule__thursday">
-                <div class="schedule__thursday_day schedule__day">четверг</div>
-                <div class="schedule__lession_1 schedule__lession">1</div>
-                <div class="schedule__lession_2 schedule__lession">2</div>
-                <div class="schedule__lession_3 schedule__lession">3</div>
-                <div class="schedule__lession_4 schedule__lession">4</div>
-            </div>
-            <div id="friday" class="schedule__friday">
-                <div class="schedule__friday_day schedule__day">пятница</div>
-                <div class="schedule__lession_1 schedule__lession">1</div>
-                <div class="schedule__lession_2 schedule__lession">2</div>
-                <div class="schedule__lession_3 schedule__lession">3</div>
-                <div class="schedule__lession_4 schedule__lession">4</div>
-            </div>
-            <div id="saturday" class="schedule__saturday">
-                <div class="schedule__saturday_day schedule__day">суббота</div>
-                <div class="schedule__lession schedule__lession_active">1</div>
-                <div class="schedule__lession">2</div>
-                <div class="schedule__lession">3</div>
-                <div class="schedule__lession">4</div>
-            </div>
-            <div id="sunday" class="schedule__sunday">
-                <div class="schedule__sunday_day schedule__day">воскресенье</div>
-                <div id="sun_1" class="schedule__lession pykpyk">1</div>
-                <div id="sun_2" class="schedule__lession">2</div>
-                <div id="sun_3" class="schedule__lession">3</div>
-                <div id="sun_4" class="schedule__lession">4</div>
+            <div class="schedule__wrapper">
+                <div id="monday" class="schedule__monday">
+                    <div class="schedule__monday_day schedule__day">Понедельник</div>
+                    <div id="mon_1" class="schedule__lession">
+                        <div class="schedule__time">8:00</div>
+                        <div class="schedule__name">НЕФТЕГАЗОПРОМЫСЛОВОЕ Оборудование</div>
+                    </div>
+                    <div id="mon_2" class="schedule__lession schedule__split">
+                        ЭЛЕКТРОТЕХНИКА И ЭЛЕКТРОНИКА (пр) доц. Бахирев И.В. 355 гл.	
+                    </div>
+                    <div id="mon_3" class="schedule__lession">
+                        ДЕЛОВОЙ ИНОСТРАННЫЙ ЯЗЫК (пр) ст. пр. Сабитова А.Р. 
+                    </div>
+                    <div id="mon_4" class="schedule__lession schedule__split">
+                        ЭЛЕКТРОТЕХНИКА И ЭЛЕКТРОНИКА (лек) доц. Бахирев И.В. 355 гл.
+                    </div>
+                </div>
+                <div id="tuesday" class="schedule__tuesday">
+                    <div id="tue_1" class="schedule__tuesday_day schedule__day">вторник</div>
+                    <div class="schedule__lession">
+                        БЕЗОПАСНОСТЬ ЖИЗНЕДЕЯТЕЛЬНОСТИ (лек)
+                        доц. Мартюшев Д.А. 407 гл.
+                    </div>
+                    <div id="tue_2" class="schedule__lession">
+                        ДЕТАЛИ МАШИН И ОСНОВЫ
+                        КОНСТРУИРОВАНИЯ (лек)
+                        проф. Сиротенко Л.Д. 421 гл.
+                    </div>
+                    <div id="tue_3" class="schedule__lession">3</div>
+                </div>
+                <div id="wednesday" class="schedule__wednesday">
+                    <div class="schedule__wednesday_day schedule__day">среда</div>
+                    <div id="wed_1" class="schedule__lession">
+                        НЕФТЕГАЗОПРОМЫСЛОВОЕ
+                        ОБОРУДОВАНИЕ (пр)
+                        доц. Кожевников Е.В. 407 гл.	
+                    </div>
+                    <div id="wed_2" class="schedule__lession">
+                        СТРОИТЕЛЬСТВО НЕФТЯНЫХ И ГАЗОВЫХ
+                        СКВАЖИН (лек) доц. Чернышов С.Е. 407 гл.
+                    </div>
+                    <div id="wed_3" class="schedule__lession">
+                        СТРОИТЕЛЬСТВО НЕФТЯНЫХ И ГАЗОВЫХ
+                        СКВАЖИН (лаб) доц. Чернышов С.Е. 404 гл.
+                    </div>
+                    <div id="wed_4" class="schedule__lession schedule__split">
+                        НЕФТЕГАЗОПРОМЫСЛОВОЕ
+                        ОБОРУДОВАНИЕ (лаб) доц. Кожевников Е.В. 205 гл.
+                    </div>
+                </div>
+                <div id="thursday" class="schedule__thursday">
+                    <div class="schedule__thursday_day schedule__day">четверг</div>
+                    <div id="thu_1" class="schedule__lession">
+                        ДЕНЬ ДЛЯ ПОСЕЩЕНИЯ СЕКЦИЙ ПО
+                        ПРИКЛАДНОЙ ФИЗИЧЕСКОЙ
+                        КУЛЬТУРЕ (пр) доц. Мотолыгина Е.Н. 	
+                    </div>
+                    <div id="thu_2" class="schedule__lession schedule__split">
+                        ДЕТАЛИ МАШИН И ОСНОВЫ
+                        КОНСТРУИРОВАНИЯ (пр) проф. Сиротенко Л.Д. 034 гл.
+                    </div>
+                    <div id="thu_3" class="schedule__lession">3</div>
+                </div>
+                <div id="friday" class="schedule__friday">
+                    <div class="schedule__friday_day schedule__day">пятница</div>
+                    <div id="fri_1" class="schedule__lession schedule__split">
+                        МЕТРОЛОГИЯ (пр) доц. Вателева М.В. 431 гл.	
+                    </div>
+                    <div id="fri_2" class="schedule__lession schedule__split">
+                        СТРОИТЕЛЬСТВО НЕФТЯНЫХ И ГАЗОВЫХ
+                        СКВАЖИН (пр) доц. Чернышов С.Е. 404 гл.	
+                    </div>
+                    <div id="fri_3" class="schedule__lession">
+                        МЕТРОЛОГИЯ (лек)
+                        доц. Вателева М.В. 446 гл.
+                    </div>
+                    <div id="fri_4" class="schedule__lession">4</div>
+                </div>
+                <div id="saturday" class="schedule__saturday">
+                    <div class="schedule__saturday_day schedule__day">суббота</div>
+                    <div id="sat_1" class="schedule__lession">1</div>
+                    <div id="sat_2" class="schedule__lession">2</div>
+                    <div id="sat_3" class="schedule__lession">3</div>
+                    <div id="sat_4" class="schedule__lession">4</div>
+                </div>
+                <div id="sunday" class="schedule__sunday">
+                    <div class="schedule__sunday_day schedule__day">Воскресенье</div>
+                    <div id="sun_1" class="schedule__lession">1</div>
+                    <div id="sun_2" class="schedule__lession">2</div>
+                    <div id="sun_3" class="schedule__lession">3</div>
+                    <div id="sun_4" class="schedule__lession">4</div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="js/script.js"></script>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </html>

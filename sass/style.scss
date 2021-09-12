@@ -1,9 +1,21 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
+    font-family: 'Open Sans';
     padding: 0;
     margin: 0;
 }
 @import 'base/variebles';
 @import 'block/schedule';
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 
 .container{
     width: 1140px;
