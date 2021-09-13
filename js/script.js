@@ -28,16 +28,28 @@ if (date.getDay() == 0){
     document.getElementById("sunday").classList.add("schedule__sunday_active")
 }
 
+//super function
+
+function pulse(){
+  setInterval(function(){
+    document.getElementById(xyi).classList.add("schedule__lession_active")
+  }, 2000)
+  setInterval(function(){
+    document.getElementById(xyi).classList.remove("schedule__lession_active")
+  }, 4000)
+}
+
+
 
 //script hours
 
 let xyi;
 
-if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
+if (date.getHours() >= 6 && date.getHours() <= 9){
     xyi = "sun_1";
     document.getElementById("sun_1").classList.add("schedule__lession_active")
 }
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
+if (date.getHours() >= 9 && date.getHours() <= 11){
     xyi = "sun_2"
     document.getElementById("sun_2").classList.add("schedule__lession_active")
 }
@@ -50,106 +62,138 @@ if (date.getHours() >= 13 && date.getHours() <= 15){
     document.getElementById("sun_4").classList.add("schedule__lession_active")
 }
 
-if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
+if (date.getHours() >= 0 && date.getHours() < 9){
   xyi = "mon_1";
   document.getElementById("mon_1").classList.add("schedule__lession_active")
+  pulse();
 }
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
+if (date.getHours() >= 9 && date.getHours() <= 11){
   xyi = "mon_2"
   document.getElementById("mon_2").classList.add("schedule__lession_active")
+  pulse();
+  
 }
 if (date.getHours() >= 11 && date.getHours() <= 13){
   xyi= "mon_3"
   document.getElementById("mon_3").classList.add("schedule__lession_active")
+  pulse();
+ 
 }
 if (date.getHours() >= 13 && date.getHours() <= 15){
   xyi = "mon_4"
   document.getElementById("mon_4").classList.add("schedule__lession_active")
+  pulse();
+  
 }
-if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
+if (date.getHours() >= 0 && date.getHours() < 9){
   xyi = "tue_1";
   document.getElementById("tue_1").classList.add("schedule__lession_active")
+  pulse();
+  
 }
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
+if (date.getHours() >= 9 && date.getHours() <= 11){
   xyi = "tue_2"
   document.getElementById("tue_2").classList.add("schedule__lession_active")
+  pulse();
+
 }
 if (date.getHours() >= 11 && date.getHours() <= 13){
   xyi= "tue_3"
   document.getElementById("tue_3").classList.add("schedule__lession_active")
+  pulse();
+
 }
 
-if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
+if (date.getHours() >= 0 && date.getHours() < 13){
   xyi = "wed_1";
   document.getElementById("wed_1").classList.add("schedule__lession_active")
-}
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
-  xyi = "wed_2"
-  document.getElementById("wed_2").classList.add("schedule__lession_active")
-}
-if (date.getHours() >= 11 && date.getHours() <= 13){
-  xyi= "wed_3"
-  document.getElementById("wed_3").classList.add("schedule__lession_active")
+  pulse();
+
 }
 if (date.getHours() >= 13 && date.getHours() <= 15){
+  xyi = "wed_2"
+  document.getElementById("wed_2").classList.add("schedule__lession_active")
+  pulse();
+
+}
+if (date.getHours() >= 15 && date.getHours() < 16){
+  xyi= "wed_3"
+  document.getElementById("wed_3").classList.add("schedule__lession_active")
+  pulse();
+
+}
+if (date.getHours() >= 16 && date.getHours() < 18){
   xyi = "wed_4"
   document.getElementById("wed_4").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
+if (date.getHours() >= 0 && date.getHours() < 9){
   xyi = "thu_1";
   document.getElementById("thu_1").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
+if (date.getHours() >= 9 && date.getHours() < 11){
   xyi = "thu_2"
   document.getElementById("thu_2").classList.add("schedule__lession_active")
+  pulse();
+
 }
 if (date.getHours() >= 11 && date.getHours() <= 13){
   xyi= "thu_3"
   document.getElementById("thu_3").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
+if (date.getHours() >= 0 && date.getHours() < 11){
   xyi = "fri_1";
   document.getElementById("fri_1").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
+if (date.getHours() >= 11 && date.getHours() < 13){
   xyi = "fri_2"
   document.getElementById("fri_2").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if (date.getHours() >= 11 && date.getHours() <= 13){
+if (date.getHours() >= 13 && date.getHours() < 15){
   xyi= "fri_3"
   document.getElementById("fri_3").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if (date.getHours() >= 13 && date.getHours() <= 15){
+if (date.getHours() >= 15 && date.getHours() < 17){
   xyi = "fri_4"
   document.getElementById("fri_4").classList.add("schedule__lession_active")
+  pulse();
+
 }
 if (date.getHours() >= 6 && (date.getHours() <= 9 && date.getMinutes()<30)){
   xyi = "sat_1";
   document.getElementById("sat_1").classList.add("schedule__lession_active")
+  pulse();
+
 }
-if ((date.getHours() >= 9 && date.getMinutes()>30) && date.getHours() <= 11){
+if (date.getHours() >= 9 && date.getHours() <= 11){
   xyi = "sat_2"
   document.getElementById("sat_2").classList.add("schedule__lession_active")
+  pulse();
+
 }
 if (date.getHours() >= 11 && date.getHours() <= 13){
   xyi= "sat_3"
   document.getElementById("sat_3").classList.add("schedule__lession_active")
+  pulse();
+
 }
 if (date.getHours() >= 13 && date.getHours() <= 15){
   xyi = "sat_4"
   document.getElementById("sat_4").classList.add("schedule__lession_active")
+  pulse();
+
 }
-
-
-//script merwanie
-
-setInterval(function(){
-  document.getElementById(xyi).classList.add("schedule__lession_active")
-}, 1000)
-setInterval(function(){
-  document.getElementById(xyi).classList.remove("schedule__lession_active")
-}, 2000)
-
 
 //btn script
 
