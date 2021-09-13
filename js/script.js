@@ -272,9 +272,9 @@ $('#sun_btn').on('click', function(){
 
 
 //script sperma
-let max_particles = 500;
+let max_particles = 1500;
 let particles = [];
-let frequency = 50;
+let frequency = 100;
 let init_num = max_particles;
 let max_time = frequency * max_particles;
 let time_to_recreate = false;
@@ -324,10 +324,10 @@ class Particle {
     this.a = 0;
     this.w = $(window).width();
     this.h = $(window).height();
-    this.radius = random > .2 ? Math.random() * 1 : Math.random() * 3;
-    this.color = random > .2 ? "#694FB9" : "#9B0127";
-    this.radius = random > .8 ? Math.random() * 2.2 : this.radius;
-    this.color = random > .8 ? "#3CFBFF" : this.color;
+    this.radius = random > .2 ? Math.random() * 3 : Math.random() * 6;
+    this.color = random > .2 ? "#ea05ff" : "#05e2ff";
+    this.radius = random > .8 ? Math.random() * 22 : this.radius;
+    this.color = random > .8 ? "#ff6105" : this.color;
   }
 
   calculateDistance(v1, v2) {
